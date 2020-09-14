@@ -1,0 +1,492 @@
+<!-- NProgress -->
+<link href="/plugin/nprogress/nprogress.css" rel="stylesheet">
+<!-- iCheck -->
+<link href="/plugin/iCheck/skins/flat/green.css" rel="stylesheet">
+<!-- bootstrap-progressbar -->
+<link href="/plugin/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+<!-- JQVMap -->
+<link href="/plugin/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+<!-- bootstrap-daterangepicker -->
+<link href="/plugin/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+<!-- page content -->
+<div class="right_col" role="main">
+    <!-- top tiles -->
+    <div class="row" style="display: inline-block;" >
+        <div class="tile_count">
+            <div class="col-md-2 col-sm-4  tile_stats_count">
+                <span class="count_top"><i class="fa fa-user"></i> Total Users</span>
+                <div class="count">2500</div>
+                <span class="count_bottom"><i class="green">4% </i> From last Week</span>
+            </div>
+            <div class="col-md-2 col-sm-4  tile_stats_count">
+                <span class="count_top"><i class="fa fa-clock-o"></i> Average Time</span>
+                <div class="count">123.50</div>
+                <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i> From last Week</span>
+            </div>
+            <div class="col-md-2 col-sm-4  tile_stats_count">
+                <span class="count_top"><i class="fa fa-user"></i> Total Males</span>
+                <div class="count green">2,500</div>
+                <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
+            </div>
+            <div class="col-md-2 col-sm-4  tile_stats_count">
+                <span class="count_top"><i class="fa fa-user"></i> Total Females</span>
+                <div class="count">4,567</div>
+                <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>12% </i> From last Week</span>
+            </div>
+            <div class="col-md-2 col-sm-4  tile_stats_count">
+                <span class="count_top"><i class="fa fa-user"></i> Total Collections</span>
+                <div class="count">2,315</div>
+                <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
+            </div>
+            <div class="col-md-2 col-sm-4  tile_stats_count">
+                <span class="count_top"><i class="fa fa-user"></i> Total Connections</span>
+                <div class="count">7,325</div>
+                <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
+            </div>
+        </div>
+    </div>
+    <!-- /top tiles -->
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 ">
+            <div class="dashboard_graph">
+                <div class="row x_title">
+                    <div class="col-md-6">
+                        <h3>GZBD Line Graph <small>Last seven days</small></h3>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12">
+                    <div id="chart_plot_01" class="demo-placeholder"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <br />
+    
+    <div class="row">
+        <div class="col-md-12 col-sm-12 ">
+            <div class="dashboard_graph">
+                <div class="row x_title">
+                    <div class="col-md-6">
+                        <h3>GZBD Bar Graph <small>Last seven days</small></h3>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12">
+                    <div id="chart_plot_02" class="demo-placeholder"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <br />
+    
+    <div class="row">
+        <div class="col-md-12 col-sm-12 ">
+            <div class="dashboard_graph">
+                <div class="row x_title">
+                    <div class="col-md-6">
+                        <h3>三产 Pie Graph <small>三产比例</small></h3>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <div id="chart_plot_033" class="demo-placeholder"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <br />
+    
+    <div class="row">
+        <div class="col-md-12 col-sm-12 ">
+            <div class="dashboard_graph">
+                <div class="row x_title">
+                    <div class="col-md-6">
+                        <h3>Jqv Map <small>地图示例</small></h3>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <div id="chart_jqvmap_world" class="demo-placeholder"></div>
+                </div>
+                
+                <div class="col-md-6 col-sm-6">
+                    <div id="chart_jqvmap_china" class="demo-placeholder"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+</div>
+<!-- /page content -->
+
+<!-- FastClick -->
+<script src="/plugin/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="/plugin/nprogress/nprogress.js"></script>
+<!-- Chart.js -->
+<script src="/plugin/Chart.js/dist/Chart.min.js"></script>
+<!-- gauge.js -->
+<script src="/plugin/gauge.js/dist/gauge.min.js"></script>
+<!-- bootstrap-progressbar -->
+<script src="/plugin/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+<!-- iCheck -->
+<script src="/plugin/iCheck/icheck.min.js"></script>
+<!-- Skycons -->
+<script src="/plugin/skycons/skycons.js"></script>
+
+<!-- Flot -->
+<script src="/plugin/Flot/jquery.flot.js"></script>
+<script src="/plugin/Flot/jquery.flot.pie.js"></script>
+<script src="/plugin/Flot/jquery.flot.time.js"></script>
+<script src="/plugin/Flot/jquery.flot.stack.js"></script>
+<script src="/plugin/Flot/jquery.flot.resize.js"></script>
+<!-- Flot plugins -->
+<script src="/plugin/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+<script src="/plugin/flot-spline/js/jquery.flot.spline.min.js"></script>
+<script src="/plugin/flot.curvedlines/curvedLines.js"></script>
+
+<!-- DateJS -->
+<script src="/plugin/DateJS/build/date.js"></script>
+<!-- JQVMap -->
+<script src="/plugin/jqvmap/dist/jquery.vmap.js"></script>
+<script src="/plugin/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+<script src="/plugin/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+<!-- bootstrap-daterangepicker -->
+<script src="/plugin/moment/min/moment.min.js"></script>
+<script src="/plugin/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	initGraph();
+	initJqvMap();
+});
+
+function initGraph() {
+    // 图轨数据示例
+    // var trace_1 = \[\[new Date("2020-07-18"),43\],\[new Date("2020-07-19"),22\]\];
+    // var trace_2 = \[\[new Date("2020-07-18"),43\],\[new Date("2020-07-19"),22\]\];
+    // var traces = \[trace_1, trace_2\];
+    
+    var lineGraphSettings = {
+		// 自定义数据系列
+		series : {
+			// points,lines,bars设置项
+			lines: {
+				// =============公共属性========================
+				// 是否显示
+				show : false,
+				// 是否填充
+				fill : true,
+				// 线宽度
+				//lineWidth: number,
+				// 填充色，如rgba(255, 255, 255, 0.8)
+				//fillColor : rgba(255, 255, 255, 0.8),
+				// ===============私有属性=======================
+				// 指定两个点之间是用水平线还是垂直线连接
+				//steps: true,
+			},
+			/* points: {
+				//点的半径
+				radius: 0,
+				// 绘制点的方法，默认为内置的圆形，可以通过自定义函数来定义其他形状
+				symbol: "circle",
+			},
+			bars: {
+				barWidth: 5,
+				// "left", "right" or "center"
+				align: "left",
+				horizontal: true,
+			}, */
+			// 现状图变为曲线图
+			splines : {
+				show : true,
+				tension : 0.4,
+				lineWidth : 1,
+				fill : 0.4
+			},
+			// 设置阴影的大小，0消除阴影
+			shadowSize : 2
+		},
+		// 网格设置
+		grid : {
+			// 是否显示格子
+			show: true,
+			// 网格线颜色
+			color : '#fff',
+			// 网格背景颜色
+			backgroundColor: null,
+			verticalLines : true,
+			hoverable : true,
+			clickable : true,
+			tickColor : "#d5d5d5",
+			borderWidth : 1,
+		},
+		// 设置每个图轨颜色
+		colors : [ "rgba(38, 185, 154, 0.38)", "rgba(3, 88, 106, 0.38)", "rgba(255, 0, 0, 0.38)" ],
+		// x轴
+		xaxis : {
+			tickColor : "rgba(51, 51, 51, 0.06)",
+			// 刻度文字显示的位置"bottom" or "top" or "left" or "right"
+		    position: 'bottom',
+		 	// 设置成time类型时可以用时间作为数据
+			mode : "time",
+			// 时间格式化
+			timeformat: "%y/%m/%d",
+			// 单独定义刻度文字颜色
+			tickSize : [ 1, "day" ],
+			//tickLength: 10,
+			axisLabel : "日期",
+			// 刻度区域大小
+			labelWidth: 50, 
+			//showTickLabels: 'none',
+			//axisLabelUseCanvas : true,
+			//axisLabelFontSizePixels : 12,
+			//axisLabelFontFamily : 'Verdana, Arial',
+			//axisLabelPadding : 10
+		},
+		// y轴
+		yaxis : {
+			ticks : 8,
+			tickColor : "rgba(51, 51, 51, 0.06)",
+			axisLabel : "数量",
+		},
+		tooltip : true,
+	};
+    var barGraphSettings = {
+		// 自定义数据系列
+		series : {
+			bars: {
+				barWidth: 0.6,
+				// "left", "right" or "center"
+				align: "center",
+				horizontal: true,
+			},
+			// 现状图变为曲线图
+			splines : {
+				show : true,
+				tension : 0.4,
+				lineWidth : 1,
+				fill : 0.4
+			},
+			// 设置阴影的大小，0消除阴影
+			shadowSize : 2
+		},
+		// 网格设置
+		grid : {
+			// 是否显示格子
+			show: true,
+			// 网格线颜色
+			color : '#fff',
+			// 网格背景颜色
+			backgroundColor: null,
+			verticalLines : true,
+			hoverable : true,
+			clickable : true,
+			tickColor : "#d5d5d5",
+			borderWidth : 1,
+		},
+		// 设置每个图轨颜色
+		colors : [ "rgba(38, 185, 154, 0.38)", "rgba(3, 88, 106, 0.38)", "rgba(255, 0, 0, 0.38)" ],
+		// x轴
+		xaxis : {
+			tickColor : "rgba(51, 51, 51, 0.06)",
+			// 刻度文字显示的位置"bottom" or "top" or "left" or "right"
+		    position: 'bottom',
+		 	// 设置成time类型时可以用时间作为数据
+			mode : "time",
+			// 时间格式化
+			timeformat: "%y/%m/%d",
+			// 刻度区域大小
+			labelWidth: 50, 
+			// 单独定义刻度文字颜色
+			tickSize : [ 1, "day" ],
+			//tickLength: 10,
+			axisLabel : "日期",
+			//showTickLabels: 'none',
+			//axisLabelUseCanvas : true,
+			//axisLabelFontSizePixels : 12,
+			//axisLabelFontFamily : 'Verdana, Arial',
+			//axisLabelPadding : 10
+		},
+		// y轴
+		yaxis : {
+			ticks : 8,
+			tickColor : "rgba(51, 51, 51, 0.06)",
+			axisLabel : "数量",
+		},
+		tooltip : true,
+	};
+    var barGraphSettings = {
+		series : {
+			bars: {
+				show: true,
+				barWidth: 0.6,
+				align: "center",
+				fillColor: "#63B8FF",
+				lineWidth: 15,// 设置柱状图宽度
+			},
+			shadowSize : 2
+		},
+		grid : {
+			verticalLines : true,
+			hoverable : true,
+			clickable : true,
+			tickColor : "#d5d5d5",
+			borderWidth : 1,
+			color : '#fff'
+		},
+		colors : [ "rgba(38, 185, 154, 0.38)", "rgba(3, 88, 106, 0.38)", "rgba(255, 0, 0, 0.38)" ],
+		xaxis : {
+			tickColor : "rgba(51, 51, 51, 0.06)",
+			mode : "time",
+			timeformat: "%y/%m/%d",
+			labelWidth: 50, 
+			tickSize : [ 1, "day" ],
+			//tickLength: 10,
+			axisLabel : "Date",
+			axisLabelUseCanvas : true,
+			axisLabelFontSizePixels : 12,
+			axisLabelFontFamily : 'Verdana, Arial',
+			axisLabelPadding : 10
+		},
+		yaxis : {
+			ticks : 8,
+			tickColor : "rgba(51, 51, 51, 0.06)",
+		},
+		tooltip : false
+	};
+    var pieGraphSettings = {
+    		// 自定义数据系列
+    		series : {
+    			pie: {
+    				show: true,
+    			    radius: 0.65,
+    			    label: {
+    			    	show: true,
+    			    	radius: 1/3,// 半径
+    			    	formatter: function(label, series){
+    	   			    	  return '<div style="font-size:10pt;text-align:center;padding:30px;color:black;">'
+    	   			    	  +Math.round(series.percent)+'%</div>';
+    	   			    	}
+    			    },
+    			}
+    		},
+    		// 网格设置
+    		grid : {
+    			// 是否显示格子
+    			show: true,
+    			// 网格线颜色
+    			color : '#fff',
+    			// 网格背景颜色
+    			backgroundColor: null,
+    			verticalLines : true,
+    			hoverable : true,
+    			clickable : true,
+    			tickColor : "#d5d5d5",
+    			borderWidth : 1,
+    		},
+    		// 设置每个图轨颜色
+    		colors : [ "rgba(38, 185, 154, 0.38)", "rgba(3, 88, 106, 0.38)", "rgba(255, 0, 0, 0.38)" ],
+    		/* legend: {
+				show: true,
+				labelFormatter:function labelFormatter(label, series) {
+					return '<div style="font-size:8pt; text-align:center; padding:2px;color:'
+						+series.color+';">'+label+'</div>';
+				}
+			}, */
+    	};
+    
+	var gzbds = [];
+	
+	$.ajax({
+		url : "/api/gzbds",
+		type : "get",
+		success : function (data) {
+			var traceDiagnosis = [];
+			var traceCure = [];
+			var traceDeath = [];
+			
+			$.each(data, function(i, item) {
+				if (i < 7) {
+					var diagnosis = [];
+			        diagnosis.push(new Date(data[i].date));
+	                diagnosis.push(data[i].diagnosis);
+	                traceDiagnosis.push(diagnosis);
+	                var cure = [];
+	                cure.push(new Date(data[i].date));
+	                cure.push(data[i].cure);
+	                traceCure.push(cure);
+	                var death = [];
+	                death.push(new Date(data[i].date));
+	                death.push(data[i].death);
+	                traceDeath.push(death);				
+				}
+			});
+			
+			// gzbds.push(traceDiagnosis);
+			// gzbds.push(traceCure);
+			// gzbds.push(traceDeath);
+			gzbds.push({label:"<div style='color: #0b2e13'>确诊数</div>", data:traceDiagnosis});
+			gzbds.push({label:"<div style='color: #0b2e13'>治愈数</div>", data:traceCure});
+			gzbds.push({label:"<div style='color: #0b2e13'>死亡数</div>", data:traceDeath});
+			$.plot($("#chart_plot_01"), gzbds, lineGraphSettings);
+			
+			gzbds = [];
+			gzbds.push({label:"<div style='color: #0b2e13'>确诊数</div>", 
+				data:traceDiagnosis, bars: {show: true}});
+			gzbds.push({label:"<div style='color: #0b2e13'>治愈数</div>", 
+				data:traceCure, bars: {show: true}});
+			gzbds.push({label:"<div style='color: #0b2e13'>死亡数</div>", 
+				data:traceDeath, bars: {show: true}});
+			$.plot($("#chart_plot_02"), gzbds, barGraphSettings);
+		},
+		error : function (data) {
+			layer.msg(data.responseText, {icon: 0});
+		}
+	});
+	
+	pieData = [
+		{label: "<div style='color: #0b2e13'>第一产业</div>", data: 33}, 
+		{label: "<div style='color: #0b2e13'>第二产业</div>", data: 44}, 
+		{label: "<div style='color: #0b2e13'>第三产业</div>", data: 55}];
+	$.plot($("#chart_plot_033"), pieData, pieGraphSettings);
+}
+
+function initJqvMap() {
+	jQuery('#chart_jqvmap_world').vectorMap({
+		map: 'world_en',
+		backgroundColor: null,
+		color: '#ffffff',
+		hoverOpacity: 0.7,
+		selectedColor: '#666666',
+		enableZoom: true,
+		showTooltip: true,
+		values: sample_data,
+		scaleColors: ['#C8EEFF', '#006491'],
+		normalizeFunction: 'polynomial',
+	});
+	
+	jQuery('#chart_jqvmap_china').vectorMap({
+		map: 'world_en',
+		backgroundColor: null,
+		color: '#ffffff',
+		hoverOpacity: 0.7,
+		selectedColor: '#666666',
+		enableZoom: true,
+		showTooltip: true,
+		values: sample_data,
+		scaleColors: ['#C8EEFF', '#006491'],
+		normalizeFunction: 'polynomial',
+	});
+}
+</script>
+
+
